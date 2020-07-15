@@ -1,0 +1,29 @@
+server:
+  port: 7006
+spring:
+  application:
+    name: gateway-${server.port}
+  cloud:
+    gateway:
+      routes:
+        - id: consumer_7004 #路由id
+          uri: lb://consumer-7004  # 匹配后提供服务的uri
+          predicates: #断言
+            - Path=/7004/** #路径匹配进行路由
+          filters:
+            - StripPrefix=1 #过滤掉前2个路径,指consumer和7004
+        - id: consumer_7005
+          #uri: http://localhost:7005
+          uri: lb://feign-7005
+          predicates:
+            - Path=/7005/**
+          filters:
+            - StripPrefix=1 #过滤掉前2个路径,指consumer和7004
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka,http://localhost:7001/eureka
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+    instance-id: gate-${server.port}

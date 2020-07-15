@@ -1,0 +1,30 @@
+server:
+  port: 7005
+spring:
+  application:
+    name: feign-${server.port}
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka,http://localhost:7001/eureka
+  instance:
+    prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: true #开启断路器
+hystix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 11000 #设置超时时间为11秒
+        timeout:
+          enabled: true #开启hystrix超时熔断
+logging:
+  level:
+    com.yym.springcloud.consumer.feign.service.IFeignService: debug
+# 设置feign客户端超时时间(OpenFeign默认支持ribbon)
+ribbon:
+  ReadTimeout: 5000  # 指的是建立连接所用的时间,适用于网络状态正常的情况下,两端连接所用的时间
+  ConnectTimeout: 5000 # 指的是建立连接后从服务器读取到可用资源所用的时间

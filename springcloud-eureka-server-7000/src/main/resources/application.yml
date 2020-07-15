@@ -1,0 +1,15 @@
+server:
+  port: 7000
+spring:
+  application:
+    name: eureka-server-${server.port}
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      #defaultZone: http://localhost:7000/eureka/
+      defaultZone: http://localhost:7001/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: eureka-server-7000 #区别与服务名,用户下UI下显示,独一无二的
