@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/springcloud-consumer-feign-7005/springcloud-consumer-feign-7005.iml" filepath="$PROJECT_DIR$/springcloud-consumer-feign-7005/springcloud-consumer-feign-7005.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-consumer-resttemplate-7004/springcloud-consumer-resttemplate-7004.iml" filepath="$PROJECT_DIR$/springcloud-consumer-resttemplate-7004/springcloud-consumer-resttemplate-7004.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-dependencies/springcloud-dependencies.iml" filepath="$PROJECT_DIR$/springcloud-dependencies/springcloud-dependencies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-eureka-server-7000/springcloud-eureka-server-7000.iml" filepath="$PROJECT_DIR$/springcloud-eureka-server-7000/springcloud-eureka-server-7000.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-eureka-server-7001/springcloud-eureka-server-7001.iml" filepath="$PROJECT_DIR$/springcloud-eureka-server-7001/springcloud-eureka-server-7001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-gateway-7006/springcloud-gateway-7006.iml" filepath="$PROJECT_DIR$/springcloud-gateway-7006/springcloud-gateway-7006.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-provider-7002/springcloud-provider-7002.iml" filepath="$PROJECT_DIR$/springcloud-provider-7002/springcloud-provider-7002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-provider-7003/springcloud-provider-7003.iml" filepath="$PROJECT_DIR$/springcloud-provider-7003/springcloud-provider-7003.iml" />
+    </modules>
+  </component>
+</project>

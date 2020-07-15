@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springcloud-gateway-7006" />
+        <module name="springcloud-eureka-server-7001" />
+        <module name="springcloud-eureka-server-7000" />
+        <module name="springcloud-consumer-feign-7005" />
+        <module name="springcloud-consumer-resttemplate-7004" />
+        <module name="springcloud-provider-7003" />
+        <module name="springcloud-provider-7002" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springcloud-consumer-feign-7005" target="1.8" />
+      <module name="springcloud-consumer-resttemplate-7004" target="1.8" />
+      <module name="springcloud-dependencies" target="1.8" />
+      <module name="springcloud-eureka-server-7000" target="1.8" />
+      <module name="springcloud-eureka-server-7001" target="1.8" />
+      <module name="springcloud-gateway-7006" target="1.8" />
+      <module name="springcloud-provider-7002" target="1.8" />
+      <module name="springcloud-provider-7003" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
