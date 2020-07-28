@@ -15,6 +15,8 @@
         <module>../springcloud-consumer-resttemplate-7004</module>
         <module>../springcloud-consumer-feign-7005</module>
         <module>../springcloud-gateway-7006</module>
+        <module>../springcloud-config-7007</module>
+        <module>../springcloud-config-client-7008</module>
     </modules>
     <packaging>pom</packaging>
 

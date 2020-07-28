@@ -2,10 +2,10 @@
 ### 端口说用
 1. eureka集群 7000 7001
 2. provider 7002 7003
-3. consumer 7004 7005
-4. ribbon 7006
-5. hystrice 7008
-6. feign 7009
-7. config 7010
-8. geteway 7011
-9. 其他待定
+3. consumer-resttemplate 7004
+4. consumer-feign 7005
+5. gateway 7006
+6. config 7007
+7. sleuth 7008
+8. bus 7009
+...
