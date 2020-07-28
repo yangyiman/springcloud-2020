@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: pro
+  cloud:
+    config:
+      label: master
+      name: config-client
+      profile: ${spring.profiles.active}
+      uri: http://localhost:7007
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
